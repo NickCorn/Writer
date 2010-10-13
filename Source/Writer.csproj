@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB61FA49-18D4-44C2-A5BD-EE553D4CC6E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Writer</RootNamespace>
+    <AssemblyName>Writer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>KeyPair.snk</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\Build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application.cs" />
+    <Compile Include="ApplicationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CommandBar\CommandBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarCollection.cs" />
+    <Compile Include="CommandBar\CommandBarComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarItemCollection.cs" />
+    <Compile Include="CommandBar\CommandBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandBar\CommandBarStyle.cs" />
+    <Compile Include="CommandBar\CommandBarTypeConverter.cs" />
+    <Compile Include="CommandBar\NativeMethods.cs" />
+    <Compile Include="CommandBar\TextGraphics.cs" />
+    <Compile Include="CommandLine.cs" />
+    <Compile Include="CommandManager.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="DocumentView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileHistory.cs" />
+    <Compile Include="FindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FontSizeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FtpConfiguration.cs" />
+    <Compile Include="FtpConfigurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FtpConnection.cs" />
+    <Compile Include="FtpPasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Html\HtmlAlignment.cs" />
+    <Compile Include="Html\HtmlControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Html\HtmlElement.cs" />
+    <Compile Include="Html\HtmlFontSize.cs" />
+    <Compile Include="Html\HtmlFormat.cs" />
+    <Compile Include="Html\HtmlFormatter.cs" />
+    <Compile Include="Html\HtmlSelection.cs" />
+    <Compile Include="Html\HtmlSelectionType.cs" />
+    <Compile Include="Html\HtmlSite.cs" />
+    <Compile Include="Html\HtmlTextFormatting.cs" />
+    <Compile Include="Html\NativeMethods.cs" />
+    <Compile Include="ICommandTarget.cs" />
+    <Compile Include="IConfiguration.cs" />
+    <Compile Include="IConfigurationManager.cs" />
+    <Compile Include="InsertDateTimeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertHyperlinkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReplaceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.cs" />
+    <Compile Include="TextGraphics.cs" />
+    <EmbeddedResource Include="Application.ico" />
+    <EmbeddedResource Include="Application.png" />
+    <EmbeddedResource Include="CommandBar.png" />
+    <EmbeddedResource Include="Format.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,5 @@
+[assembly: System.Reflection.AssemblyTitle("Lutz Roeder's Writer")]
+[assembly: System.Reflection.AssemblyVersion("1.0.0.0")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright \x0A9 2002-2004 Lutz Roeder.\nAll rights reserved.")]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Runtime.InteropServices.ComVisible(true)]
