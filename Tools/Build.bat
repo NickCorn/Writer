@@ -6,10 +6,8 @@ set FrameworkVersion=2.0.50727
 if exist %SystemRoot%\Microsoft.NET\Framework\v%FrameworkVersion%\csc.exe goto :Start
 :Start
 
-pushd ..\Build
-if exist Debug rd /s /q Debug
-if exist Release rd /s /q Release
-popd
+if exist ..\Build rd /s /q ..\Build
+md ..\Build
 
 pushd ..\Source
 if exist bin rd /s /q bin
